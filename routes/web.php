@@ -70,8 +70,8 @@ Route::prefix('tenants')->group(function(){
     
     
     Route::resource('users', 'UsersController');
-    Route::get('profile', 'UsersController@profile')->name('users-profile');
-    Route::put('profile', 'UsersController@update')->name('users.update-profile');
+    Route::get('profile', 'ProfilesController@index')->name('profile');
+    //Route::put('profile', 'ProfilesController@update')->name('profiles.update-profile');
 
  
     

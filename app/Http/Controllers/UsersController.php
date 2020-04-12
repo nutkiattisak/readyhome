@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\Users\UpdateProfileRequest;
+
 use App\User;
 
 class UsersController extends Controller
@@ -43,11 +43,6 @@ class UsersController extends Controller
     public function create()
     {
         return view('users.create');
-    }
-
-    public function profile()
-    {
-        return view('users.profile')->with('user', auth()->user());
     }
 
 
@@ -102,16 +97,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProfileRequest  $request)
-    {
-        $user = auth()->user();
-        $user->update([
-            'firstname' => $request->firstname,
-            'lastname' => $request->lastname,
-            'phone' => $request->phone,
-        ]);
-        return redirect()->back();
-    }
+    
 
     /**
      * Remove the specified resource from storage.

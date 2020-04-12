@@ -1,6 +1,6 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
-        <div class="logo-src"></div>
+        <div class="logo-src" style="height: 23px;width: 97px;background: url('https://demo.dashboardpack.com/architectui-html-pro/assets/images/logo-inverse.png');"></div>
         <div class="header__pane ml-auto">
             <div>
                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -33,7 +33,7 @@
         <div class="app-header-left">
             <div class="search-wrapper">
                 <div class="input-holder">
-                    <input type="text" class="search-input" placeholder="Type to search">
+                    <input type="text" class="search-input" placeholder="ค้นหา...">
                     <button class="search-icon"><span></span></button>
                 </div>
                 <button class="close"></button>
@@ -63,15 +63,29 @@
 
             <div class="header-btn-lg pr-0">
                 <div class="widget-content p-0">
-                    <div class="widget-content-wrapper">
+                    <div class="widget-content-wrapper c-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="widget-content-left">
                             <div class="btn-group">
-                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                <a  class="p-0 btn">
                                     <img width="42" class="rounded-circle" src="{{ Gravatar::src(Auth::user()->email) }}" alt="">
-                                    <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                 </a>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                    <a href="{{ route('users-profile') }}" class="dropdown-item">บัญชีผู้ใช้</a>
+                                
+                            </div>
+                        </div>
+                        <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                        <!-- <div class="widget-content-left  ml-3 header-user-info">
+                            <div class="widget-heading">
+                                {{ Auth::user()->firstname }}  {{ Auth::user()->lastname }}
+                            </div>
+                            <div class="widget-subheading">
+                                Admin
+                            </div>
+                        </div> -->
+                        <!-- <i class="fa fa-angle-down ml-2 opacity-8"></i> -->
+                    </div>
+                    
+                    <!-- <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                    <a href="{{ route('profile') }}" class="dropdown-item">บัญชีผู้ใช้</a>
                                     <button type="button" tabindex="0" class="dropdown-item">ตั้งค่า </button>
                         
                                         
@@ -81,19 +95,38 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+                                </div> -->
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-rounded dropdown-menu-lg dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-293px, 44px, 0px);">
+                                        <div class="dropdown-menu-header">
+                                            <div class="dropdown-menu-header-inner bg-info">
+                                                <div class="menu-header-image opacity-2" style="background-image: url('https://demo.dashboardpack.com/architectui-html-pro/assets/images/dropdown-header/city3.jpg');"></div>
+                                                <div class="menu-header-content text-left">
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <img width="42" class="rounded-circle" src="{{ Gravatar::src(Auth::user()->email) }}" alt="">
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">
+                                                                    {{ Auth::user()->firstname }}  {{ Auth::user()->lastname }}
+                                                                </div>
+                                                                <div class="widget-subheading opacity-8">Admin</div>
+                                                            </div>
+                                                            <div class="widget-content-right mr-2">
+                                                                <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="{{ route('profile') }}" class="dropdown-item"><i class="dropdown-icon fas fa-user"> </i>บัญชีผู้ใช้</a>
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>
+                                        <div tabindex="-1" class="dropdown-divider"></div>
+                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="widget-content-left  ml-3 header-user-info">
-                            <div class="widget-heading">
-                                {{ Auth::user()->firstname }}  {{ Auth::user()->lastname }}
-                            </div>
-                            <div class="widget-subheading">
-                                Admin
-                            </div>
-                        </div>
-                        
-                    </div>
                 </div>
             </div>        
         </div>
