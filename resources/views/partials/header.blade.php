@@ -60,7 +60,39 @@
             </ul>        
         </div>
         <div class="app-header-right">
-
+        <div class="header-dots">
+                    
+                    
+                    <div class="dropdown show">
+                        <button type="button" data-toggle="dropdown" class="p-0 mr-2 btn btn-link" aria-expanded="true">
+                            <span class="icon-wrapper icon-wrapper-alt rounded-circle">
+                                <span class="icon-wrapper-bg bg-focus"></span>
+                                <span class="language-icon opacity-8 flag large TH"></span>
+                            </span>
+                        </button>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-198px, 46px, 0px);">
+                            <div class="dropdown-menu-header">
+                                <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
+                                    <div class="menu-header-image opacity-05" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
+                                    <div class="menu-header-content text-center text-white">
+                                        <h6 class="menu-header-subtitle mt-0">
+                                            เลือกภาษา
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <button type="button" tabindex="0" class="dropdown-item" data-lang="us">
+                                <span class="mr-3 opacity-8 flag large US"></span>
+                                USA
+                            </button>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
             <div class="header-btn-lg pr-0">
                 <div class="widget-content p-0">
                     <div class="widget-content-wrapper c-pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -98,8 +130,8 @@
                                 </div> -->
                                 <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-rounded dropdown-menu-lg dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-293px, 44px, 0px);">
                                         <div class="dropdown-menu-header">
-                                            <div class="dropdown-menu-header-inner bg-info">
-                                                <div class="menu-header-image opacity-2" style="background-image: url('https://demo.dashboardpack.com/architectui-html-pro/assets/images/dropdown-header/city3.jpg');"></div>
+                                            <div class="dropdown-menu-header-inner bg-success">
+                                                <div class="menu-header-image opacity-2" style="background-image: url('https://demo.dashboardpack.com/architectui-html-pro/assets/images/dropdown-header/abstract3.jpg');"></div>
                                                 <div class="menu-header-content text-left">
                                                     <div class="widget-content p-0">
                                                         <div class="widget-content-wrapper">
@@ -122,7 +154,7 @@
                                             </div>
                                         </div>
                                         <a href="{{ route('profile') }}" class="dropdown-item"><i class="dropdown-icon fas fa-user"> </i>บัญชีผู้ใช้</a>
-                                        <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>
+                                        <a href="#" class="dropdown-item"><i class="dropdown-icon fas fa-envelope"> </i>ข้อความ</a>
                                         <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>
                                         <div tabindex="-1" class="dropdown-divider"></div>
                                         <button type="button" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-file-empty"> </i>Graphic Design</button>

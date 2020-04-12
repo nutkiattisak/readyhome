@@ -31,14 +31,12 @@
     
         </div>
     </div>          
-    
-   
   
-    {{-- <div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="main-card mb-3 card">
                 <div class="card-body">
-                    <form acction="{{ route('users.update-profile') }}" method="POST">
+                    <form acction="{{ route('profiles.update-profile') }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="position-relative row form-group">
@@ -69,14 +67,14 @@
                         </div>
                 
                         <div class="position-relative row form-check">
-                            <div class="col-sm-10 offset-sm-2">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="offset-sm-2">
+                                <button type="submit" class="btn btn-primary">บันทึก</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 </div>
 @endsection

@@ -13,7 +13,7 @@ class ProfilesController extends Controller
          return view('profiles.index')->with('user', auth()->user());
      }
 
-    /*public function update(UpdateProfileRequest  $request)
+    public function update(UpdateProfileRequest  $request)
     {
         $user = auth()->user();
         $user->update([
@@ -22,5 +22,5 @@ class ProfilesController extends Controller
             'phone' => $request->phone,
         ]);
         return redirect()->back();
-    }*/
+    }
 }

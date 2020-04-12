@@ -32,11 +32,11 @@
     <div class="scrollbar-sidebar">
         <div class="app-sidebar__inner">
             <ul class="vertical-nav-menu">
-                <li class="app-sidebar__heading">Dashboards</li>
+                <li class="app-sidebar__heading">แผงควบคุม</li>
                 <li>
                 <a href="" class="{{ Request::is("home") ? 'mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-rocket"></i>
-                        Dashboard
+                        แผงควบคุม
                     </a>
                 </li>
                 <li class="app-sidebar__heading">

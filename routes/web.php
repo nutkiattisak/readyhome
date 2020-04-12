@@ -15,7 +15,7 @@ Route::get('/', function () {
     
     if (Auth::check())
     {
-        return view('welcome');
+        return view('home');
     }
     else{
         return view('auth.login');
@@ -71,7 +71,7 @@ Route::prefix('tenants')->group(function(){
     
     Route::resource('users', 'UsersController');
     Route::get('profile', 'ProfilesController@index')->name('profile');
-    //Route::put('profile', 'ProfilesController@update')->name('profiles.update-profile');
+    Route::put('profile', 'ProfilesController@update')->name('profiles.update-profile');
 
  
     
